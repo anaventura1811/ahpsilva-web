@@ -1,13 +1,33 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  /* colors: */
+  --main-background-color: #364082;
+  --secondary-background-color: #f4f4f4;
+  --gray-background-color: #373434;
+
+  /* fonts */
+  --font-family-subtitle: 'Fira Sans', sans-serif;
+  --font-family-title: 'Montserrat', sans-serif;
+  --font-family-logo: 'Solway', serif;
+  --font-color: #f3efe9;
+  --secondary-font-color: #D08D57;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+
+.title_underline {
+
 }
+
+.title_underline::after {
+  content: '';
+  display: inline-flex;
+  width: 16px;
+  height: 4px;
+  background-color: var(--secondary-font-color);
+  margin-left: 0.1rem;
+}
+
