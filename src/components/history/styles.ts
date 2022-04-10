@@ -91,10 +91,15 @@ export const SummaryContainer = styled.div`
     flex-direction: column-reverse;
     align-items: center;
     justify-content: space-between;
+    padding: 1rem;
 
     .history-text {
       max-width: 100%;
       margin: 0.8rem;
+
+      > p {
+        padding: 0;
+      }
     }
 
     .image-container > img {
@@ -107,6 +112,12 @@ export const SummaryContainer = styled.div`
     .history-text > h2 {
       font-size: 32px;
 
+    }
+  }
+
+  @media (max-width: 400px) {
+    .image-container {
+      display: none;
     }
   }
  

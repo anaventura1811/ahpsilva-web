@@ -30,8 +30,8 @@ const HeroSection = (props: Props) => {
             onMouseLeave={onHover}
             primary={true}
             dark={true}
-            big={true}
-            fontBig={true}
+            big={false}
+            fontBig={false}
           >
             Conheça nossa história
             { hover ? <ArrowForward /> : <ArrowRight />}

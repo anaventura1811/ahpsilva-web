@@ -6,6 +6,7 @@ import { Container, ContentContainer } from './styles';
 import HistorySection from '../../components/history';
 import InfoSection from '../../components/info';
 import {homeObjOne} from '../../components/info/data';
+import Testimonials from '../../components/testimonials';
 
 type Props = {};
 
@@ -29,8 +30,11 @@ const Home = (props: Props) => {
         <div className='summary-container' id="nossa-historia">
           <HistorySection />
         </div>
+        <div className='testimonials-container' id="depoimentos">
+          <Testimonials />
+        </div>
         <div className='info-container'>
-          <InfoSection homeObjOne={homeObjOne} />
+          {/* <InfoSection homeObjOne={homeObjOne} /> */}
         </div>
       </ContentContainer>
     </>

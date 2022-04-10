@@ -50,7 +50,7 @@ export const ContentContainer = styled.div`
   .summary-container {
     width: 100vw;
     height: 100vh;
-    padding: 2rem 0;
+    /* padding: 2rem 0; */
     background-color: var(--gray-background-color);
     display: flex;
     align-items: center;
