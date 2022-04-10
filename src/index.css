@@ -17,11 +17,6 @@ body {
 }
 
 
-
-.title_underline {
-
-}
-
 .title_underline::after {
   content: '';
   display: inline-flex;
