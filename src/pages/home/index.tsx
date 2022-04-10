@@ -3,6 +3,7 @@ import Navbar from '../../components/nav';
 import Sidebar from '../../components/sidebar';
 import HeroSection from '../../components/hero';
 import { Container, ContentContainer } from './styles';
+import HistorySection from '../../components/history';
 
 type Props = {};
 
@@ -20,8 +21,11 @@ const Home = (props: Props) => {
         <Sidebar isOpen={isOpen} toggle={toggle}/>
       </Container>
       <ContentContainer>
-      <div className='hero-container'>
+        <div className='hero-container'>
           <HeroSection />
+        </div>
+        <div className='summary-container'>
+          <HistorySection />
         </div>
       </ContentContainer>
     </>
