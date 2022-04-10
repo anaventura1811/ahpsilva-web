@@ -1,4 +1,13 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
+
+interface BtnProps {
+  primary: boolean | string;
+  big: boolean | string;
+  dark: boolean | string;
+  fontBig: boolean | string;
+}
+
 
 export const SummaryContainer = styled.div`
   background-color: var(--gray-background-color);
@@ -11,7 +20,7 @@ export const SummaryContainer = styled.div`
   align-items: center;
   justify-content: space-evenly;
   flex-wrap: nowrap;
-  flex-direction: row;
+  flex-direction: row-reverse;
   /* gap: 2rem; */
   padding: 0;
 
@@ -43,11 +52,16 @@ export const SummaryContainer = styled.div`
 
     > h2 {
       font-weight: 700;
+      font-size: 48px;
+    }
+
+    > p > span {
+      font-weight: 700;
     }
 
     .btn-container {
       display: flex;
-      justify-content: flex-end;
+      justify-content: flex-start;
     }
 
     .summary-btn {
@@ -58,7 +72,6 @@ export const SummaryContainer = styled.div`
       font-weight: 700;
       text-transform: uppercase;
       border: none;
-      /* background-color: var(--secondary-font-color); */
       color: var(--secondary-background-color);
       cursor: pointer;
       text-decoration: none;
@@ -75,7 +88,7 @@ export const SummaryContainer = styled.div`
   }
 
   @media (max-width: 980px) {
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: center;
     justify-content: space-between;
 
@@ -88,5 +101,37 @@ export const SummaryContainer = styled.div`
       height: 45vw;
     }
   }
+
+  @media (max-width: 480px) {
+  
+    .history-text > h2 {
+      font-size: 32px;
+
+    }
+  }
  
+`;
+
+export const Button = styled(Link)<BtnProps>`
+  border-radius: 50px;
+  background: ${({ primary}) => (primary ? '#D08D57' : '#010606')};
+  white-space: nowrap;
+  padding: ${({big}) => (big ? '14px 48px' : '12px 30px')};
+  color: ${({ dark}) => (dark ? '#373434' : '#fff')};
+  font-size: ${({fontBig}) => (fontBig ? '20px' : '16px')};
+  outline: none;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    transition: all 0.2s ease-in-out;
+    background: ${({ primary}) => (primary ? '#fff' : '#01bf71')};
+  }
 `;

@@ -54,7 +54,7 @@ export const HeroBg = styled.div`
 
 export const VideoBg = styled.video`
   width: 100%;
-  opacity: 0.5;
+  opacity: 0.8;
   height: 100%;
   -o-object-fit: cover;
   object-fit: cover;
