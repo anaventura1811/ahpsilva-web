@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Navbar from '../../components/nav';
 import Sidebar from '../../components/sidebar';
+import HeroSection from '../../components/hero';
 import { Container, ContentContainer } from './styles';
 
 type Props = {};
@@ -20,7 +21,7 @@ const Home = (props: Props) => {
       </Container>
       <ContentContainer>
       <div className='hero-container'>
-          {/* <HeroSection /> */}
+          <HeroSection />
         </div>
       </ContentContainer>
     </>
