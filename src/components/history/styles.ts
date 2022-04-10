@@ -5,7 +5,7 @@ interface BtnProps {
   primary: boolean | string;
   big: boolean | string;
   dark: boolean | string;
-  fontBig: boolean | string;
+  fontSize: boolean | string;
 }
 
 
@@ -129,7 +129,7 @@ export const Button = styled(Link)<BtnProps>`
   white-space: nowrap;
   padding: ${({big}) => (big ? '14px 48px' : '12px 30px')};
   color: ${({ dark}) => (dark ? '#373434' : '#f4f4f4')};
-  font-size: ${({fontBig}) => (fontBig ? '20px' : '16px')};
+  font-size: ${({fontSize}) => (fontSize ? '20px' : '16px')};
   outline: none;
   text-decoration: none;
   text-transform: uppercase;

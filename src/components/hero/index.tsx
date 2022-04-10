@@ -28,10 +28,10 @@ const HeroSection = (props: Props) => {
             to="nossa-historia"
             onMouseEnter={onHover}
             onMouseLeave={onHover}
-            primary={true}
-            dark={true}
-            big={false}
-            fontBig={false}
+            primary={"true"}
+            dark={"true"}
+            fontSize={"false"}
+            big={"false"}
           >
             Conheça nossa história
             { hover ? <ArrowForward /> : <ArrowRight />}

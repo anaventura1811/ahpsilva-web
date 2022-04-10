@@ -23,7 +23,9 @@ type Props = {
 
 const InfoSection = (props: Props) => {
   const { homeObjOne } = props;
-  const { id, lightBg, lightText, dark, description, img, alt, primary, darkText, headline, topLine, lightTextDesc,imgStart, buttonLabel } = homeObjOne;
+  const { id, lightBg, lightText, dark, description, img, alt, primary, darkText, headline, topLine,
+    // lightTextDesc,
+    imgStart, buttonLabel } = homeObjOne;
 
   return (
     <>
@@ -42,8 +44,8 @@ const InfoSection = (props: Props) => {
                     dark={dark}
                     primary={primary}
                     to="home"
-                    big={true}
-                    fontBig={true}
+                    big={"true"}
+                    fontSize={"true"}
                   >
                     {buttonLabel}
                   </Button>

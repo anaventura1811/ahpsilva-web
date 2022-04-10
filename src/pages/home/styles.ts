@@ -1,5 +1,9 @@
 import styled from "styled-components";
 
+interface ContentProps {
+  animate: string;
+}
+
 export const Container = styled.header`
   display: flex;
   width: 100vw;
@@ -83,8 +87,7 @@ export const ContentContainer = styled.div`
   }
 
   .testimonials-container {
-    height: 100vh;
-    width: 100vw;
+
   }
 
   @media (max-width: 980px) {
@@ -117,4 +120,14 @@ export const ContentContainer = styled.div`
       flex-direction: column;
     }
   } */
+`;
+
+export const TestimonialsContainer = styled.div<ContentProps>`
+    height: 100vh;
+    width: 100vw;
+    transform: translateX(${({ animate }) => (animate === "true" ? '0' : '-50vw')});transition: transform 1s;
+
+  @media (max-width: 980px) {
+    height: auto;
+  }
 `;

@@ -7,7 +7,7 @@ interface BtnProps {
   primary: boolean | string;
   big: boolean | string;
   dark: boolean | string;
-  fontBig: boolean | string;
+  fontSize: boolean | string;
 }
 
 export const HeroContainer = styled.div`
@@ -114,9 +114,9 @@ export const Button = styled(Link)<BtnProps>`
   border-radius: 50px;
   background: ${({ primary}) => (primary ? '#D08D57' : '#f4f4f4')};
   white-space: nowrap;
-  padding: ${({big}) => (big ? '14px 48px' : '12px 30px')};
-  color: ${({ dark}) => (dark ? '#010606' : '#f4f4f4')};
-  font-size: ${({fontBig}) => (fontBig ? '20px' : '16px')};
+  padding: ${({big}) => (big === "true" ? '14px 48px' : '12px 30px')};
+  color: ${({ dark}) => (dark === "true" ? '#010606' : '#f4f4f4')};
+  font-size: ${({ fontSize }) => (fontSize === "true" ? '20px' : '16px')};
   outline: none;
   border: none;
   cursor: pointer;
@@ -127,7 +127,7 @@ export const Button = styled(Link)<BtnProps>`
 
   &:hover {
     transition: all 0.2s ease-in-out;
-    background: ${({ primary}) => (primary ? '#fff' : '#01bf71')};
+    background: ${({ primary}) => (primary === "true" ? '#f4f4f4' : '#01bf71')};
   }
 `;
 

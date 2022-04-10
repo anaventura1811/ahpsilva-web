@@ -29,6 +29,7 @@ export const TextWrapper = styled.div`
       max-width: 500px;
       padding: 1em;
       text-align: left;
+      transition: 0.2s ease-in-out;
 
     
       blockquote {
