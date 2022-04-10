@@ -29,7 +29,7 @@ export const SummaryContainer = styled.div`
     position: relative;
     /* width: auto; */
     border-radius: 100%;
-    width: 100%;
+    /* width: 100%; */
     height: 35vw;
     /* height: 95%; */
   }
