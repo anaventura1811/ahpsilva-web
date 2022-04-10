@@ -1,5 +1,6 @@
 import { useState } from 'react';
-import {HeroContainer, HeroBg, HeroContent, HeroH1, HeroP, HeroBtnWrapper, Button, ArrowForward, ArrowRight } from './styles';
+import {HeroContainer, HeroBg, HeroContent, HeroH1, HeroP, HeroBtnWrapper, Button, ArrowForward, ArrowRight, VideoBg } from './styles';
+import Video from '../../assets/video/city.mp4';
 
 type Props = {};
 
@@ -13,7 +14,7 @@ const HeroSection = (props: Props) => {
   return (
     <HeroContainer>
       <HeroBg>
-        {/* <VideoBg autoPlay loop muted src={Video} /> */}
+        <VideoBg autoPlay loop muted src={Video} />
       </HeroBg>
       <HeroContent>
         <HeroH1>Há <span>15 anos</span> entregando justiça ao cidadão</HeroH1>
