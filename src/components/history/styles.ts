@@ -114,10 +114,10 @@ export const SummaryContainer = styled.div`
 
 export const Button = styled(Link)<BtnProps>`
   border-radius: 50px;
-  background: ${({ primary}) => (primary ? '#D08D57' : '#010606')};
+  background: ${({ primary}) => (primary ? '#D08D57' : '#f4f4f4')};
   white-space: nowrap;
   padding: ${({big}) => (big ? '14px 48px' : '12px 30px')};
-  color: ${({ dark}) => (dark ? '#373434' : '#fff')};
+  color: ${({ dark}) => (dark ? '#373434' : '#f4f4f4')};
   font-size: ${({fontBig}) => (fontBig ? '20px' : '16px')};
   outline: none;
   text-decoration: none;
