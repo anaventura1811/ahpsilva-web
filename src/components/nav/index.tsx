@@ -85,8 +85,8 @@ const Navbar = (props: Props) => {
         }
       </ul>
       <div className='user-logo'>
-        {location.pathname !== '/login' && (
-          <Link to="/login">
+        {location.pathname !== '/signin' && (
+          <Link to="/signin">
             <FaUserCircle color="#f4f4f4" size={25} />
           </Link>
         )

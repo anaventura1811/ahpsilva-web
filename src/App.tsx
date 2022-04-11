@@ -6,6 +6,7 @@ import {
   Route,
 } from "react-router-dom";
 import Home from './pages/home';
+import SignIn from './pages/signin';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
      <BrowserRouter basename={process.env.PUBLIC_URL}>
         <Routes>
           <Route path="/" element={<Home />}/>
+          <Route path="/signin" element={<SignIn />}/>
         </Routes>
      </BrowserRouter>
     </div>

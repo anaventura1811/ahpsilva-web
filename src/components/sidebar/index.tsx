@@ -28,7 +28,7 @@ const Sidebar = (props: Props) => {
             Contato
           </SidebarLink>
           <SideBtnWrap>
-            <SidebarRoute to="/login" onClick={toggle}>
+            <SidebarRoute to="/signin" onClick={toggle}>
                 Login
             </SidebarRoute>
           </SideBtnWrap>
