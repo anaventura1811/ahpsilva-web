@@ -47,5 +47,12 @@ export const ImageContainer = styled.div`
   > img {
     max-height: 400px;
   }
+
+  @media (max-width: 480px) {
+  
+    > img {
+      max-height: 300px;
+    }
+  }
   /* max-height: 500px; */
 `;
