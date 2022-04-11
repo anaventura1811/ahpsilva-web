@@ -18,9 +18,9 @@ const Sidebar = (props: Props) => {
           <SidebarLink to="nossa-historia" onClick={toggle}>
             Nossa história
           </SidebarLink>
-          <SidebarLink to="atuacao" onClick={toggle}>
+          {/* <SidebarLink to="atuacao" onClick={toggle}>
             Atuação
-          </SidebarLink>
+          </SidebarLink> */}
           <SidebarLink to="depoimentos" onClick={toggle}>
             Depoimentos
           </SidebarLink>

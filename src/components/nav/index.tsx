@@ -39,11 +39,11 @@ const Navbar = (props: Props) => {
                 Nossa História
               </LinkScroll>
             </li>
-            <li>
+            {/* <li>
               <LinkScroll activeClass='active' to="atuacao" smooth={true} duration={500} spy={true} offset={-50}>
                 Atuação
               </LinkScroll>
-            </li>
+            </li> */}
             <li>
               <LinkScroll activeClass='active' to="depoimentos" smooth={true} duration={500} spy={true} >
                 Depoimentos
@@ -65,11 +65,11 @@ const Navbar = (props: Props) => {
                   Nossa história
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link to="/atuacao">
                   Atuação
                 </Link>
-              </li>
+              </li> */}
               <li>
                 <Link to="/contato">
                   Contato
