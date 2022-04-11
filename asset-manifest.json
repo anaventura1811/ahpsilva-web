@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/ahpsilva-web/static/css/main.2378832b.css",
+    "main.js": "/ahpsilva-web/static/js/main.6ee89fa2.js",
+    "static/js/787.7609cd70.chunk.js": "/ahpsilva-web/static/js/787.7609cd70.chunk.js",
+    "static/media/city.mp4": "/ahpsilva-web/static/media/city.df06626494d3a6c71d2e.mp4",
+    "static/media/foto.svg": "/ahpsilva-web/static/media/foto.94ed75862699b6d897ebd94d9ee5b6d2.svg",
+    "static/media/AntonioPereira-01.png": "/ahpsilva-web/static/media/AntonioPereira-01.fb10d3010b923a9856c2.png",
+    "static/media/building-blocks.svg": "/ahpsilva-web/static/media/building-blocks.70cb0e3445a28eb8881a17479444d5b0.svg",
+    "index.html": "/ahpsilva-web/index.html",
+    "main.2378832b.css.map": "/ahpsilva-web/static/css/main.2378832b.css.map",
+    "main.6ee89fa2.js.map": "/ahpsilva-web/static/js/main.6ee89fa2.js.map",
+    "787.7609cd70.chunk.js.map": "/ahpsilva-web/static/js/787.7609cd70.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2378832b.css",
+    "static/js/main.6ee89fa2.js"
+  ]
+}
