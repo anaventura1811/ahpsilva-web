@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { NavContainer, MobileIcon, NavMenu } from './styles';
 import { Link, useLocation } from 'react-router-dom';
 import { Link as LinkScroll } from 'react-scroll';
@@ -11,9 +11,9 @@ type Props = {
 
 const Navbar = (props: Props) => {
   const { toggle } = props;
-
+  
   const location = useLocation();
-  console.log('location pathname: ', location.pathname);
+  // console.log('location pathname: ', location.pathname);
 
   return (
     <NavContainer>
@@ -35,22 +35,22 @@ const Navbar = (props: Props) => {
         {location.pathname === '/' &&
           <>
             <li>
-              <LinkScroll to="nossa-historia">
+              <LinkScroll to="nossa-historia" smooth={true} duration={4000} spy={true} >
                 Nossa História
               </LinkScroll>
             </li>
             <li>
-              <LinkScroll to="atuacao">
+              <LinkScroll to="atuacao" smooth={true} duration={4000} spy={true} offset={-50}>
                 Atuação
               </LinkScroll>
             </li>
             <li>
-              <LinkScroll to="depoimentos">
+              <LinkScroll to="depoimentos" smooth={true} duration={4000} spy={true} offset={-80}>
                 Depoimentos
               </LinkScroll>
             </li>
             <li>
-              <LinkScroll to="contato">
+              <LinkScroll to="contato" smooth={true} duration={4000} spy={true} offset={-50}>
                 Contato
               </LinkScroll>
             </li>

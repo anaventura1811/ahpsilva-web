@@ -25,6 +25,11 @@ export const NavContainer = styled.nav`
     li > a {
       text-decoration: none;
       color: var(--font-color);
+
+      &:hover, &:visited {
+        text-decoration: underline;
+        text-decoration-color: var(--secondary-font-color);
+      }
     }
   }
 
@@ -72,6 +77,10 @@ export const MobileIcon = styled.div`
     right: 0;
     transform: translate(-100%, 60%);
     cursor: pointer;
+
+    &:hover {
+      color: var(--secondary-font-color);
+    }
   }
 `;
 

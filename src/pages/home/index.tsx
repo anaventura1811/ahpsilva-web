@@ -1,4 +1,4 @@
-import React, { useState, useRef, useLayoutEffect, useCallback } from 'react';
+import React, { useState, useRef, useLayoutEffect, useCallback, useEffect } from 'react';
 import Navbar from '../../components/nav';
 import Sidebar from '../../components/sidebar';
 import HeroSection from '../../components/hero';
@@ -7,12 +7,25 @@ import HistorySection from '../../components/history';
 // import InfoSection from '../../components/info';
 // import {homeObjOne} from '../../components/info/data';
 import Testimonials from '../../components/testimonials';
+import ContactSection from '../../components/contact';
 
 type Props = {};
 
 const Home = (props: Props) => {
   const [isOpen, setIsOpen] = useState(false);
-  const [show, doShow] = useState(false);
+  const [show, doShow] = useState('');
+  const [scrollNav, setScrollNav] = useState('');
+
+  const changeNav = () => {
+    if (window.scrollY >= 80 && window.scrollY <= 714) {
+      setScrollNav('gray');
+    } else if (window.scrollY > 714) {
+      setScrollNav('blue');
+    } else {
+      setScrollNav('');
+    }
+  };
+
 
   const toggle = () => {
     setIsOpen(prevState => !prevState);
@@ -32,14 +45,14 @@ const Home = (props: Props) => {
   }, [topPops]);
 
   useLayoutEffect(() => {
-    window.addEventListener('scroll', onScroll);
+    window.addEventListener('scroll', changeNav);
 
-    return () => window.removeEventListener('scroll', onScroll);
-  }, [onScroll]);
+    return () => window.removeEventListener('scroll', changeNav);
+  }, []);
 
   return (
     <>
-      <Container>
+      <Container scrollNav={scrollNav}>
         <Navbar toggle={toggle} />
         <Sidebar isOpen={isOpen} toggle={toggle}/>
       </Container>
@@ -57,6 +70,7 @@ const Home = (props: Props) => {
       <TestimonialsContainer animate={"true"}  id="depoimentos" ref={scrollRef}>
         <Testimonials />
       </TestimonialsContainer>
+      <ContactSection />
     </>
   )
 }

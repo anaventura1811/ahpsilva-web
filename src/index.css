@@ -14,6 +14,9 @@ body {
   --font-family-logo: 'Solway', serif;
   --font-color: #f3efe9;
   --secondary-font-color: #D08D57;
+  --color-gray-100: 217, 217, 217;
+  --custom-box-shadow: 0 0 5px
+    rgb(var(--gray-background-color));
 }
 
 

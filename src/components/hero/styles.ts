@@ -49,6 +49,7 @@ export const HeroBg = styled.div`
   left: 0;
   width: 100vw;
   height: 100vh;
+  opacity: 0.5;
   overflow: hidden;
 `;
 

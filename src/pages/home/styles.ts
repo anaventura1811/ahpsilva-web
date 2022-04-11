@@ -4,12 +4,24 @@ interface ContentProps {
   animate: string;
 }
 
-export const Container = styled.header`
+interface ContainerProps {
+  scrollNav: string;
+}
+
+export const Container = styled.header<ContainerProps>`
   display: flex;
   width: 100vw;
   /* background: linear-gradient(45deg, black, transparent); */
-  background: linear-gradient(180deg, rgba(0,0,0,.2), rgba(0,0,0,0) 70.71%),
-        linear-gradient(180deg, rgba(54,64,130,.8), rgba(54,64,130,0.2) 100%);
+  /* linear-gradient(336deg, rgba(0,0,0,1),rgba(54,64,130, 1) 71%) */
+  /* linear-gradient(180deg, #364082 10%, #414a82 90%) */
+  /* linear-gradient(180deg, #364082 10%, #414a82 90%) */
+  /* 
+  linear-gradient(7deg,rgba(0,0,0,.2),rgba(0,0,0,.4) 70.71%), linear-gradient(127deg,rgba(54,64,130,1),rgba(54,64,130,1) 94.71%), linear-gradient(336deg,rgba(54,64,130,1),rgba(54,64,130,0.9) 96.71%);
+  */
+  /* 
+  linear-gradient(19deg,rgba(0,0,0,.2), #31375c 70.71%), linear-gradient(17deg,rgba(54,64,130,1),rgba(54,64,130,1) 94.71%), linear-gradient(336deg,rgba(54,64,130,1),rgba(54,64,130,0.9) 96.71%);
+  */
+  background: ${({scrollNav}) => (scrollNav === 'gray' ? '#2B2929' : scrollNav === 'blue' ? `linear-gradient(19deg,rgba(0,0,0,.2), #31375c 70.71%), linear-gradient(17deg,rgba(54,64,130,1),rgba(54,64,130,1) 94.71%), linear-gradient(336deg,rgba(54,64,130,1),rgba(54,64,130,0.9) 96.71%);` : `transparent` )};
   height: 80px;
   margin-top: -80px;
   font-size: 1rem;
@@ -17,6 +29,7 @@ export const Container = styled.header`
   top: 0;
   font-family: var(--font-family-subtitle);
   z-index: 10;
+  box-shadow: var(--custom-box-shadow);
 `;
 
 export const ContentContainer = styled.div`
