@@ -70,7 +70,9 @@ const Home = (props: Props) => {
       <TestimonialsContainer animate={"true"}  id="depoimentos" ref={scrollRef}>
         <Testimonials />
       </TestimonialsContainer>
-      <ContactSection />
+      <div id="contato">
+        <ContactSection />
+      </div>
     </>
   )
 }
