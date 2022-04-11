@@ -4,6 +4,7 @@ export const TestimonialsContainer =  styled.div`
   display: flex;
   flex-direction: column;
   max-width: 1280px;
+  margin: 0 auto;
   color: var(--gray-background-color);
   /* align-items: center; */
   font-family: var(--font-family-subtitle);
@@ -12,6 +13,7 @@ export const TestimonialsContainer =  styled.div`
 
 export const TextWrapper = styled.div`
   padding-top: 1.5rem;
+  margin: 0 auto;
 
   p {
     font-weight: 300;
@@ -21,12 +23,13 @@ export const TextWrapper = styled.div`
   .container {
     margin: 0 auto;
     display: flex;
+    gap: 2rem;
     justify-content: center;
     padding-bottom: 2rem;
 
     .testimonial {
       min-width: 280px;
-      max-width: 500px;
+      max-width: 530px;
       padding: 1em;
       text-align: left;
       transition: 0.2s ease-in-out;

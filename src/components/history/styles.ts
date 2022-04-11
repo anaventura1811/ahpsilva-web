@@ -13,6 +13,7 @@ export const SummaryContainer = styled.div`
   background-color: var(--gray-background-color);
   height: auto;
   min-height: 35vw;
+  margin: 0 auto;
   color: var(--secondary-background-color);
   position: relative;
   max-width: 1200px;

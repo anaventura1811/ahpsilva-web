@@ -9,8 +9,8 @@ export const NavContainer = styled.nav`
   align-items: center;
   justify-content: space-evenly;
   padding: 0;
-  margin: 0;
-  max-width: 1280px;
+  margin: 0 auto;
+  max-width: 1200px;
   position: relative;
   top: 0;
   width: 100%;
@@ -19,6 +19,7 @@ export const NavContainer = styled.nav`
   ul {
     display: flex;
     gap: 1rem;
+    margin: 0 auto;
     justify-items: flex-end;
     list-style-type: none;
 

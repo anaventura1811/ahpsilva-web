@@ -11,7 +11,7 @@ type Props = {
 
 const Navbar = (props: Props) => {
   const { toggle } = props;
-  
+
   const location = useLocation();
   // console.log('location pathname: ', location.pathname);
 

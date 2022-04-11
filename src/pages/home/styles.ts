@@ -103,6 +103,12 @@ export const ContentContainer = styled.div`
 
   }
 
+  @media (max-width: 1350px) {
+    .testimonials-container {
+      height: auto;
+    }
+  }
+
   @media (max-width: 980px) {
     /* height: auto; */
 

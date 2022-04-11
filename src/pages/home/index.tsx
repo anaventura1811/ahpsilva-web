@@ -17,9 +17,9 @@ const Home = (props: Props) => {
   const [scrollNav, setScrollNav] = useState('');
 
   const changeNav = () => {
-    if (window.scrollY >= 80 && window.scrollY <= 714) {
+    if (window.scrollY >= 80 && window.scrollY <= 799) {
       setScrollNav('gray');
-    } else if (window.scrollY > 714) {
+    } else if (window.scrollY >= 800) {
       setScrollNav('blue');
     } else {
       setScrollNav('');

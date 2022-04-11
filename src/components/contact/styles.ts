@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const ContactInfoContainer = styled.div`
   display: flex;
   flex-direction: column;
+  margin: 0 auto;
   font-family: var(--font-family-subtitle); 
   font-weight: 300;
   color: var(--font-color);
@@ -15,19 +16,22 @@ export const ContactInfoContainer = styled.div`
 
   .container {
     display: flex;
+    /* margin: 0 auto; */
     flex-direction: column;
     max-width: 1280px !important;
-    align-items: center;
+    padding: 2rem;
+    /* align-items: center; */
 
     > h2 {
-      font-weight: 700;
+      /* font-weight: 700;
+      margin: 0 auto; */
       align-self: flex-start;
       padding: 2rem;
     }
 
     .text-info {
       display: flex;
-      gap: 1rem;
+      gap: 2rem;
       flex-wrap: wrap;
       justify-content: center;
 
