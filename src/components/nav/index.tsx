@@ -35,22 +35,22 @@ const Navbar = (props: Props) => {
         {location.pathname === '/' &&
           <>
             <li>
-              <LinkScroll to="nossa-historia" smooth={true} duration={4000} spy={true} >
+              <LinkScroll activeClass='active' to="nossa-historia" smooth={true} duration={4000} spy={true} >
                 Nossa História
               </LinkScroll>
             </li>
             <li>
-              <LinkScroll to="atuacao" smooth={true} duration={4000} spy={true} offset={-50}>
+              <LinkScroll activeClass='active' to="atuacao" smooth={true} duration={500} spy={true} offset={-50}>
                 Atuação
               </LinkScroll>
             </li>
             <li>
-              <LinkScroll to="depoimentos" smooth={true} duration={4000} spy={true} offset={-80}>
+              <LinkScroll activeClass='active' to="depoimentos" smooth={true} duration={500} spy={true} >
                 Depoimentos
               </LinkScroll>
             </li>
             <li>
-              <LinkScroll to="contato" smooth={true} duration={4000} spy={true} offset={-50}>
+              <LinkScroll activeClass='active' to="contato" smooth={true} duration={500} spy={true} >
                 Contato
               </LinkScroll>
             </li>

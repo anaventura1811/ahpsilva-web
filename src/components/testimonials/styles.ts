@@ -77,7 +77,7 @@ export const TextWrapper = styled.div`
 export const HeadlineWrapper = styled.div`
    h2 {
       text-align: left;
-      padding: 0 1rem 0 1rem;
+      padding: 80px 1rem 0 1rem;
     }
 
     @media (max-width: 480px) {

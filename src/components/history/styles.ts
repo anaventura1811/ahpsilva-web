@@ -24,6 +24,7 @@ export const SummaryContainer = styled.div`
   flex-direction: row-reverse;
   /* gap: 2rem; */
   padding: 0;
+  padding-top: 80px;
 
 
   .image-container {

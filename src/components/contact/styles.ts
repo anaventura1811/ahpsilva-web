@@ -25,8 +25,9 @@ export const ContactInfoContainer = styled.div`
     > h2 {
       /* font-weight: 700;
       margin: 0 auto; */
+
       align-self: flex-start;
-      padding: 2rem;
+      padding: 80px 2rem 0 2rem;
     }
 
     .text-info {

@@ -102,17 +102,16 @@ export const ContentContainer = styled.div`
   .testimonials-container {
 
   }
-
-  @media (max-width: 1350px) {
+/* 
+  @media (max-width: 1550px) {
     .testimonials-container {
       height: auto;
     }
-  }
+  } */
 
   @media (max-width: 980px) {
     /* height: auto; */
 
-    .testimonials-container,
     .summary-container,
     .fields-of-work, 
     .contact-info {
@@ -142,7 +141,7 @@ export const ContentContainer = styled.div`
 `;
 
 export const TestimonialsContainer = styled.div<ContentProps>`
-    height: 100vh;
+    height: auto;
     width: 100vw;
     transform: translateX(${({ animate }) => (animate === "true" ? '0' : '-50vw')});transition: transform 1s;
 

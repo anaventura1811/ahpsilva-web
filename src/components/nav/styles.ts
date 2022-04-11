@@ -26,10 +26,14 @@ export const NavContainer = styled.nav`
     li > a {
       text-decoration: none;
       color: var(--font-color);
+      padding-bottom: 0.5rem;
 
       &:hover, &:visited {
-        text-decoration: underline;
-        text-decoration-color: var(--secondary-font-color);
+        color: var(--secondary-font-color);
+      }
+
+      &.active {
+        border-bottom: 3px solid var(--secondary-font-color);
       }
     }
   }
