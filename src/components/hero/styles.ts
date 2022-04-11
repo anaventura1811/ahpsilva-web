@@ -29,10 +29,6 @@ export const HeroContainer = styled.div`
     left: 0;
     right: 0;
     bottom: 0;
-    /* background-image: linear-gradient(180deg, rgba(0,0,0,.2), rgba(0,0,0,0,.6)); */
-                /* linear-gradient(0deg, rgba(0,0,0,.2), transparent);  */
-    /* background: transparent; */
-    /* opacity: 0.8; */
     background: linear-gradient(217deg, rgba(0,0,0,.2), rgba(0,0,0,.6) 70.71%),
             linear-gradient(127deg, rgba(0,0,0,.2), rgba(0,0,0,0) 70.71%),
             linear-gradient(336deg, rgba(54,64,130,.8), rgba(54,64,130,0.2) 70.71%);
@@ -49,7 +45,7 @@ export const HeroBg = styled.div`
   left: 0;
   width: 100vw;
   height: 100vh;
-  opacity: 0.85;
+  /* opacity: 0.85; */
   overflow: hidden;
 `;
 
